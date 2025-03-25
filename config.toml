@@ -37,4 +37,7 @@ pygmentsUseClasses = true
   [markup.tableOfContents]
     ordered = true
     
+[[module.mounts]]
+source = 'images'
+target = 'static'
     
