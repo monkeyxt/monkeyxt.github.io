@@ -1,6 +1,9 @@
-# Fixing Dell XPS 9640 Driver Problems on Pop!\_OS 22.04
+---
+title: "Fixing Dell XPS 9640 Driver Problems on Pop!\_OS 22.04"
+date: 2025-03-25T01:23:34-04:00
+---
 
-My old XPS15 9500 went up in smoke (literally) after five years of service, so I acquired a new XPS16 9640 for work. Unfortunately, there are known webcam and sound driver issues with the XPS16 9640, that for whatever reason has not been fixed [^1][^2]. Most of the fixes online are for Ubuntu 24.04 and 24.10, but there are no simple solutions for getting the device to work for Pop!\_OS 22.04, kernel >=6.10 and Meteor Lake. This guide is a collection of temporary fixes until the issue is resolved in the mainline kernel.
+My old XPS15 9500 went up in smoke (literally) after five years of service, so I acquired a new XPS16 9640 for work. Unfortunately, there are known webcam [^1] and sound driver [^2] issues with the XPS16 9640, that for whatever reason has not been fixed. Most of the fixes online are for Ubuntu 24.04 and 24.10, but there are no simple solutions for getting the device to work for Pop!\_OS 22.04, kernel >=6.10 and Meteor Lake. This guide is a collection of temporary fixes until the issue is resolved in the mainline kernel.
 
 ## Fixing Sound
 On a fresh install, the sound output shows "Dummy Output" as the audio output. This is because the `sof` driver is not installed. To fix this, download and install the `sof` driver
