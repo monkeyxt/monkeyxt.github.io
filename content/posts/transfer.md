@@ -109,7 +109,7 @@ $$
 
 in closed form.
 
-Another interesting twist of the problem involves giving ladder graph a half twist before glueing the ends together. This graph is known as the [Mobius ladder](https://en.wikipedia.org/wiki/M%C3%B6bius_ladder) graph. Möbius closure flps the column lef-right before glueing. Let $R$ be the permutation matrix that mirros a column state $X$ to $X^r$, the modified partition function is now
+Another interesting twist of the problem involves giving ladder graph a half twist before glueing the ends together. This graph is known as the [Möbius ladder](https://en.wikipedia.org/wiki/M%C3%B6bius_ladder) graph. Möbius closure flips the column left-right before glueing. Let $R$ be the permutation matrix that mirrors a column state $X$ to $X^r$, the modified partition function is now
 
 {{< katex >}}
 $$
