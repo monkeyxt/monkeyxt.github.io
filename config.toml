@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 
 [params]
   description = "Assembly of trivial things"
-  copyright = "Copyright © 2025 txia23"
+  copyright = "Copyright © 2025 Tian Xia"
   dark = "off"
   highlight = true
 
@@ -20,6 +20,14 @@ pygmentsUseClasses = true
     url = "/about/"
     weight = 20
 
+
+  [[menu.main]]
+    identifier = "teaching"
+    name = "teaching"
+    title = "teaching"
+    url = "/teaching/"
+    weight = 10
+  
   [[menu.main]]
     identifier = "posts"
     name = "posts"
@@ -36,6 +44,7 @@ pygmentsUseClasses = true
 
   [markup.tableOfContents]
     ordered = true
+    
 [[module.mounts]]
 source = 'images'
 target = 'static'
