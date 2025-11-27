@@ -11,8 +11,8 @@ main#content hr {
 
 /* index.html styles */
 header#banner h2 {
-    font-size: 25px;
-    font-size: 2.5rem;
+    font-size: 30px;
+    font-size: 3.0-rem;
 }
 
 main#content h3 {
