@@ -90,6 +90,20 @@ Future signInWithGoogle() async {
 
 最后的成品大概长[这样](https://play.google.com/store/apps/details?id=com.amherst.mammoth_meals)，虽然UI还是有点丑，但以我的审美，大概也指望不出什么更惊艳的设计了，所以就先硬着头皮投入使用，等学期中如果有空，再根据用户反馈慢慢打磨。
 
+<div style="display: flex; gap: 15px; align-items: flex-start; margin: 20px 0; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 200px;">
+    <img src="/flutter/flutter0.png" alt="Flutter App Screenshot 1" style="max-width: 100%; height: auto;">
+  </div>
+  <div style="flex: 1; min-width: 200px;">
+    <img src="/flutter/flutter1.png" alt="Flutter App Screenshot 2" style="max-width: 100%; height: auto;">
+  </div>
+  <div style="flex: 1; min-width: 200px;">
+    <img src="/flutter/flutter2.png" alt="Flutter App Screenshot 3" style="max-width: 100%; height: auto;">
+  </div>
+</div>
+
+
+
 受时间所限，很多东西目前的实现都比较粗糙。比如APP的前端数据是fake实时刷新的，现版本的解决方案比较粗暴，直接开了两个timer，一个负责每五分钟从后台API抓取当日还剩余餐位的时间点，另外一个负责每分钟在前台刷新UI，然后根据本机的时间，并结合本机时间筛掉已经不符合条件的饭点（比如已经过期、人数已满）。后来发现如果后台杀不掉的话，这俩timer就会不停运行，向后端发送API请求。
 
 为了解决这个问题，我打了个 `WidgetsBindingObserver`的补丁，让应用监视自己当前是否在前台，如果在前台则启动timer，如果在后台，那暂停timer。对于刷新频率不算太高的应用，这种方案基本可以在前端实时性和后端压力之间找到一个还算体面的平衡。但如果是那种需要快速、持续实时更新数据的场景，或许[Stream Builder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html)是个更好的选择。
