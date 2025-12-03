@@ -2,7 +2,7 @@
 title = "Teaching"
 +++
 
-Though I am now well in the lands of applied physics and engineering, I have always enjoyed knowing and teaching theoretical computer science. Here are the theory classes for which I have served as teaching assistant at Dartmouth.
+Though I am now well in the lands of applied physics and engineering, I have always enjoyed knowing and teaching theoretical computer science. My favorite algorithm is [Karger's Min-Cut](https://en.wikipedia.org/wiki/Karger%27s_algorithm). My favorite complexity classes are [BQP](https://complexityzoo.net/Complexity_Zoo:B#bqp) and [#P](https://complexityzoo.net/Complexity_Zoo:Symbols#sharpp). I have served as a TA at Dartmouth for the following theory classes:
 
 - COSC-30 Discrete Mathematics (Winter 2025)
 - COSC-31 Algorithms ([Winter 2024](https://canvas.dartmouth.edu/courses/63142), Fall 2024, [Winter 2025](https://canvas.dartmouth.edu/courses/69996))
