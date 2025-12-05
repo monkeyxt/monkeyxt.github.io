@@ -2,8 +2,52 @@
 title = "About"
 +++
 
-<div style="display: flex; gap: 20px; align-items: flex-start; margin: 0px 0;">
-  <div style="flex: 5;">
+<style>
+  @media (max-width: 750px) {
+    .about-container {
+      flex-direction: column !important;
+      gap: 0 !important;
+      align-items: stretch !important;
+    }
+    .about-image {
+      order: 0 !important;
+      margin: 0 0 20px 0 !important;
+      width: 70vw !important;
+      max-width: 300px !important;
+      display: flex !important;
+      justify-content: flex-start !important;
+    }
+    .about-image img {
+      margin-left: 0 !important;
+      margin-right: auto !important;
+    }
+    .about-text {
+      width: 100% !important;
+      margin: 0 !important;
+      order: 1 !important;
+    }
+  }
+  @media (min-width: 751px) {
+    .about-container {
+      flex-direction: row !important;
+      gap: 20px !important;
+      align-items: flex-start !important;
+    }
+    .about-image {
+      order: 1 !important;
+      flex: 2;
+      display: flex;
+      justify-content: center;
+    }
+    .about-text {
+      order: 0 !important;
+      flex: 5;
+    }
+  }
+</style>
+
+<div class="about-container" style="display: flex; gap: 20px; align-items: flex-start; margin:0;">
+  <div class="about-text">
     <p>
       I am a BE/MS student at <a href="https://home.dartmouth.edu/" target="_blank">Dartmouth College</a> majoring in Electrical Engineering as part of the <a href="https://engineering.dartmouth.edu/undergraduate/dual" target="_blank">Dual Degree Program</a>. I am advised by <a href="https://engineering.dartmouth.edu/community/faculty/mattias-fitzpatrick" target="_blank">Mattias Fitzpatrick</a>. I am broadly interested in quantum information science. My more recent focus has spanned superconducting qubits, computational quantum optics, and combinatorial optimization.
     </p>
@@ -23,14 +67,11 @@ title = "About"
       <a href="https://www.linkedin.com/in/txia23/" target="_blank">LinkedIn</a>
     </p>
   </div>
-
-  <div style="flex: 2;">
+  <div class="about-image">
     <img 
       src="/about/profile.jpg" 
       alt="Profile Picture" 
       style="width: 250px; max-width: 100%; box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08); margin-bottom: 12px; margin-top: 20px; margin-left: 5px"
     >
   </div>
-
 </div>
-
