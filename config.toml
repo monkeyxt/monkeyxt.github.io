@@ -20,6 +20,12 @@ pygmentsUseClasses = true
     url = "/about/"
     weight = 20
 
+  [[menu.main]]
+    identifier = "research"
+    name = "research"
+    title = "research"
+    url = "/research/"
+    weight = 10
 
   [[menu.main]]
     identifier = "teaching"
