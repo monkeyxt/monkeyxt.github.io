@@ -4,19 +4,19 @@
         <h1>{{ .Title }}</h1>
     </header>
     {{- if .Params.image -}}
-    <div class="side-by-side-container" style="margin: 0;">
-        <div class="side-by-side-text" style="flex: 5;">
+    <div class="side-by-side-container" style="margin: 0; display: flex; flex-direction: row; gap: 20px; align-items: flex-start;">
+        <div class="side-by-side-text" style="flex: 5; min-width: 0;">
             {{ .Content }}
         </div>
         {{- $imagePath := .Params.image -}}
         {{- if not (hasPrefix $imagePath "/") -}}
             {{- $imagePath = printf "/%s" $imagePath -}}
         {{- end -}}
-        <div class="side-by-side-image" style="flex: 2;">
+        <div class="side-by-side-image" style="flex: 2; display: flex; justify-content: center; align-items: flex-start; min-width: 0;">
             <img 
                 src="{{ $imagePath }}" 
                 alt="{{ .Params.image_alt | default "Profile Picture" }}"
-                style="width: 250px; max-width: 100%; margin-bottom: 12px; margin-top: 20px; margin-left: 5px;"
+                style="width: 250px; max-width: 100%; margin-bottom: 12px; margin-top: 20px; margin-left: 5px; display: block;"
             >
         </div>
     </div>
