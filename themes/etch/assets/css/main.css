@@ -329,8 +329,8 @@ footer#footer {
     }
     
     .side-by-side-image img {
-        width: 70vw !important;
-        max-width: 300px !important;
+        width: 50vw !important;
+        max-width: 200px !important;
         margin-left: 0 !important;
         margin-right: auto !important;
     }
@@ -340,5 +340,16 @@ footer#footer {
         width: 100% !important;
         margin: 0 !important;
         flex: none !important;
+    }
+}
+
+/* Ensure desktop layout: text first, then image */
+@media (min-width: 751px) {
+    .side-by-side-text {
+        order: 0;
+    }
+    
+    .side-by-side-image {
+        order: 1;
     }
 }
