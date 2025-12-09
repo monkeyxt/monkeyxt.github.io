@@ -1,77 +1,16 @@
 +++
 title = "About"
+image = "/about/profile.jpg"
+image_alt = "Profile Picture"
 +++
 
-<style>
-  @media (max-width: 750px) {
-    .about-container {
-      flex-direction: column !important;
-      gap: 0 !important;
-      align-items: stretch !important;
-    }
-    .about-image {
-      order: 0 !important;
-      margin: 0 0 20px 0 !important;
-      width: 70vw !important;
-      max-width: 300px !important;
-      display: flex !important;
-      justify-content: flex-start !important;
-    }
-    .about-image img {
-      margin-left: 0 !important;
-      margin-right: auto !important;
-    }
-    .about-text {
-      width: 100% !important;
-      margin: 0 !important;
-      order: 1 !important;
-    }
-  }
-  @media (min-width: 751px) {
-    .about-container {
-      flex-direction: row !important;
-      gap: 20px !important;
-      align-items: flex-start !important;
-    }
-    .about-image {
-      order: 1 !important;
-      flex: 2;
-      display: flex;
-      justify-content: center;
-    }
-    .about-text {
-      order: 0 !important;
-      flex: 5;
-    }
-  }
-</style>
+I am a BE/MS student at [Dartmouth College](https://home.dartmouth.edu/) majoring in Electrical Engineering as part of the [Dual Degree Program](https://engineering.dartmouth.edu/undergraduate/dual). I am advised by [Mattias Fitzpatrick](https://engineering.dartmouth.edu/community/faculty/mattias-fitzpatrick). I am broadly interested in quantum information science. My more recent focus has spanned superconducting qubits, computational quantum optics, and combinatorial optimization.
 
-<div class="about-container" style="display: flex; gap: 20px; align-items: flex-start; margin:0;">
-  <div class="about-text">
-    <p>
-      I am a BE/MS student at <a href="https://home.dartmouth.edu/" target="_blank">Dartmouth College</a> majoring in Electrical Engineering as part of the <a href="https://engineering.dartmouth.edu/undergraduate/dual" target="_blank">Dual Degree Program</a>. I am advised by <a href="https://engineering.dartmouth.edu/community/faculty/mattias-fitzpatrick" target="_blank">Mattias Fitzpatrick</a>. I am broadly interested in quantum information science. My more recent focus has spanned superconducting qubits, computational quantum optics, and combinatorial optimization.
-    </p>
-    <p>
-      Previously I was at <a href="https://www.amherst.edu/" target="_blank">Amherst College</a> where I double majored in Computer Science and History, and had the fortune to be advised by <a href="https://lpentecost.github.io/cv/" target="_blank">Lillian Pentecost</a> and 
-      <a href="https://www.amherst.edu/people/facstaff/gqiao" target="_blank">George Zhijian Qiao</a>. At Amherst, I worked on optimizing parallel graph algorithms. On the history side, I was much fascinated by the frontier regions and borderlands of late Imperial China.
-    </p>
-    <p>
-      I also spent some time working at <a href="https://www.hudsonrivertrading.com/" target="_blank">Hudson River Trading</a> and <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a>.
-    </p>
-    <p>
-      I am from the beautiful city of <a href="https://en.wikipedia.org/wiki/Hangzhou" target="_blank">Hangzhou, China</a>, and grew up in <a href="https://en.wikipedia.org/wiki/Vancouver" target="_blank">Vancouver, Canada</a>.
-    </p>
-    <p>
-      <a href="mailto:t.th@dartmouth.edu">Email</a> / 
-      <a href="https://github.com/monkeyxt" target="_blank">Github</a> / 
-      <a href="https://www.linkedin.com/in/txia23/" target="_blank">LinkedIn</a>
-    </p>
-  </div>
-  <div class="about-image">
-    <img 
-      src="/about/profile.jpg" 
-      alt="Profile Picture" 
-      style="width: 250px; max-width: 100%; box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08); margin-bottom: 12px; margin-top: 20px; margin-left: 5px"
-    >
-  </div>
-</div>
+Previously I was at [Amherst College](https://www.amherst.edu/) where I double majored in Computer Science and History, and had the fortune to be advised by [Lillian Pentecost](https://lpentecost.github.io/cv/) and [George Zhijian Qiao](https://www.amherst.edu/people/facstaff/gqiao). At Amherst, I worked on optimizing parallel graph algorithms. On the history side, I was much fascinated by the frontier regions and borderlands of late Imperial China.
+
+I also spent some time working at [Hudson River Trading](https://www.hudsonrivertrading.com/) and [Amazon Web Services](https://aws.amazon.com/).
+
+I am from the beautiful city of [Hangzhou, China](https://en.wikipedia.org/wiki/Hangzhou), and grew up in [Vancouver, Canada](https://en.wikipedia.org/wiki/Vancouver).
+
+[Email](mailto:t.th@dartmouth.edu) / [Github](https://github.com/monkeyxt) / [LinkedIn](https://www.linkedin.com/in/txia23/)
+
