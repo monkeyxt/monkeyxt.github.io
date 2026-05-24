@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 
 [params]
   description = "Assembly of trivial things"
-  copyright = "Copyright © 2025 Tian Xia"
+  copyright = "Copyright © 2026 Tian Xia"
   dark = "off"
   highlight = true
 
